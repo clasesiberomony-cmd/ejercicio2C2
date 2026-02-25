@@ -2,6 +2,9 @@ from ejercicios.ejercicio1 import ejercicio_1
 from ejercicios.ejercicio2 import ejercicio_2
 from ejercicios.ejercicio3 import ejercicio_3
 from ejercicios.ejercicio4 import ejercicio_4
+#referenciar la clase
+from poo.clases.ejer1poo import Ejercicio1
+#carpeta carpeta carpeta        clase
 
 def menuPrincipal():
     while True:
@@ -16,7 +19,15 @@ def menuPrincipal():
         match(op):
             case 1:
                 #Llamada a la fución
-                ejercicio_1()
+                #ejercicio_1()
+                
+                #crear el objeto de la clase
+                e1 = Ejercicio1()
+                #Llamada a los métodos
+                e1.leerDatos()
+                e1.calcularAprox()
+                e1.mostrarResultado()
+                
             case 2:
                 ejercicio_2()
             case 3:
